@@ -12,9 +12,9 @@ let handler = async (m, { text }) => {
     m.reply(txt.slice(0, 65536) + '')
   }
 }
-handler.help = ['fetch', 'get'].map(v => v + ' <url>')
+handler.help = ['buscar', 'obtener'].map(v => v + ' <enlace>')
 handler.tags = ['internet']
-handler.command = /^(fetch|get)$/i
+handler.command = /^(buscar|obtener)$/i
 
 module.exports = handler
 
