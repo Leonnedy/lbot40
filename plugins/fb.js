@@ -24,7 +24,7 @@ let handler = async (m, { conn, args }) => {
   let unknown = '_Unknown_'
   let none = '_None_'
   let caption = `
-Konten${isFamilyFriendly ? ' ' : ' *Tidak* '}Family Friendly
+Konten${isFamilyFriendly ? ' ' : ' *No* '}Family Friendly
 Post por ${name} (${authorname || ''}) (${authorlink || ''})
 Publicado en ${new Date(uploadDate).toLocaleDateString('id', dateConfig)}
 Tamaño: ${contentSize || unknown}
@@ -38,7 +38,7 @@ Keyword: ${keywords || none}
 `.trim()
   conn.sendFile(m.chat, url, 'media-fb', caption, m)
 }
-handler.help = ['fb'].map(v => v + ' <url>')
+handler.help = ['facebook'].map(v => v + ' <enlace>')
 handler.tags = ['downloader']
 
 handler.command = /^f((b|acebook)(dl|download)?(er)?)$/i
