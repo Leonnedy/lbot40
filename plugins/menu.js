@@ -55,7 +55,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       'host': 'Host',
       'advanced': 'Avanzado',
       'info': 'Informacion',
-      '': '_*Leo Blade-termux whatsapp bot's*_',
+      '': '_*Leo Blade-termux whatsapp bots*_',
     }
     for (let plugin of Object.values(global.plugins))
       if (plugin && 'tags' in plugin)
