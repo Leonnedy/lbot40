@@ -4,9 +4,9 @@ let handler  = async (m, { conn, text }) => {
   for (let id of groups) conn.copyNForward(id, content)
   conn.reply(m.chat, `_Mengirim pesan broadcast ke ${groups.length} grup_`, m)
 }
-handler.help = ['broadcastgroup','bcgc'].map(v => v + ' <teks>')
+handler.help = ['DifusionGrupal','dfgp'].map(v => v + ' <teks>')
 handler.tags = ['owner']
-handler.command = /^(broadcast|bc)(group|grup|gc)$/i
+handler.command = /^(Difusion|df)(grupo|grupal|gp)$/i
 handler.owner = true
 handler.mods = false
 handler.premium = false
