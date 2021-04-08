@@ -11,7 +11,7 @@ let who
     m.reply(`*Pendejo añadido nuevamente✅*\n\n*Número : wa.me/${nomor.split("@s.whatsapp.net")[0]}\n*Vencimiento:* 30Days\n*gracias por agregar a alguien a premium !*`)
   // } else m.reply('Aquí hay un número de host...')
 }
-handler.help = ['addprems <nomor>']
+handler.help = ['addprems <numero>']
 handler.tags = ['owner']
 handler.command = /^addprems$/i
 handler.rowner = true
