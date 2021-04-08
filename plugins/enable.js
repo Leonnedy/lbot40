@@ -32,7 +32,7 @@ let handler = async (m, { conn, usedPrefix, command, text, args, isROwner }) => 
       break
     default:
       return m.reply(`
-List option: welcome | delete | public | antilink | autolevelup
+List option: bienvenida | borrar | publico | antilink | autonivel
 
 Contoh:
 ${usedPrefix}enable welcome
@@ -40,11 +40,11 @@ ${usedPrefix}disable welcome
 `.trim())
   }
   m.reply(`
-*${type}* berhasil di *${isEnable ? 'nyala' : 'mati'}kan* ${isAll ? 'untuk bot ini' : isUser ? '' : 'untuk chat ini'}
+*${type}* tuvo éxito en *${isEnable ? 'activar' : 'morir'}kan* ${isAll ? 'para este bot' : isUser ? '' : 'para este chat'}
 `.trim())
 }
-handler.help = ['en', 'dis'].map(v => v + 'able <option>')
+handler.help = ['habilitar', 'des'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff))$/i
+handler.command = /^((ac|act)ivar|(tru|fals)e|(turno)?encendido(n|apagado))$/i
 
 module.exports = handler
