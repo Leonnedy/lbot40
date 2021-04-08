@@ -5,11 +5,11 @@ let handler  = async (m, { command, conn, text }) => {
   let id = (command.match(/[1-6]$/) || [])[0] || ''
   await conn.sendFile(m.chat, global.API('xteam', '/magernulis' + id, {
     text,
-    nama: conn.getName(m.sender),
-    kelas: ' '
+    nombre: conn.getName(m.sender),
+    clase: ' '
   }, 'APIKEY'), 'nulis.jpg', 'Nahhh ya terminó...', m)
 }
-handler.help = new Array(6).fill('magernulis').map((v, i) => v + (i + 1) + ' <teks>')
+handler.help = new Array(6).fill('magernulis').map((v, i) => v + (i + 1) + ' <texto>')
 handler.tags = ['nulis']
 
 handler.command = /^magernulis[1-6]?$/i
