@@ -8,9 +8,9 @@ let handler = async m => m.reply(`
 │ > Queres donarme? Wa.me/18292097057
 ╰────
 `.trim()) // Agrégalo tú mismo si quieres
-handler.help = ['donasi']
+handler.help = ['donaciones']
 handler.tags = ['info']
-handler.command = /^dona(te|si)$/i
+handler.command = /^dona(cion|si)$/i
 
 module.exports = handler
 
