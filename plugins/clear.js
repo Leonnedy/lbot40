@@ -5,11 +5,11 @@ let handler = async (m, { conn, command, args }) => {
     if (isDelete) await conn.modifyChat(id, 'delete').catch(console.log)
     await conn.modifyChat(id, 'mute', -Math.floor(new Date / 1e3) * 1e3 - 1e3).catch(console.log)
   }
-  conn.reply(m.chat, chats.length + ' se ha abierto el chat grupal' + (isDelete ? 'limpio' : 'llora por siempre XD'), m)
+  conn.reply(m.chat, chats.length + ' este chat esta ' + (isDelete ? ' limpio' : ' silenciado'), m)
 }
-handler.help = ['deletechat', 'deletechat group', 'mutechat', 'mutechat group']
+handler.help = ['borrarchat', 'borrarchat grupal', 'silenciarchat', 'silenciarchat grupal']
 handler.tags = ['owner']
-handler.command = /^(clear|delete|mute)chat$/i
+handler.command = /^(borrar|limpiar|silenciar)chat$/i
 handler.owner = true
 handler.mods = false
 handler.premium = false
