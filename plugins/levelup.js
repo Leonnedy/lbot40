@@ -6,7 +6,7 @@ let handler = m => {
     let { min, xp, max } = levelling.xpRange(user.level, global.multiplier)
     throw `
 Nivel *${user.level} (${user.exp - min}/${xp})*
-Menos *${max - user.exp}* ¡otra vez!
+Menos *${max - user.exp}* te faltan puntos!
 `.trim()
   }
   user.level++
@@ -16,9 +16,9 @@ Menos *${max - user.exp}* ¡otra vez!
   `.trim())
 }
 
-handler.help = ['levelup']
+handler.help = ['subirNivel']
 handler.tags = ['xp']
 
-handler.command = /^levelup$/i
+handler.command = /^subirnivel$/i
 
 module.exports = handler
