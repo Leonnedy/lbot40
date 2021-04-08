@@ -1,13 +1,13 @@
 let handler = async (m, { conn }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastclaim > 86400000) {
-    global.DATABASE._data.users[m.sender].exp += 1000
-    m.reply('definición de a casa platita +1000 XP')
+    global.DATABASE._data.users[m.sender].exp += 5000
+    m.reply('Solo porque te quiero +5000 XP para ti :3')
     global.DATABASE._data.users[m.sender].lastclaim = new Date * 1
   } else m.reply('ora ora hijo de perra ya te di tus puntos diarios')
 }
-handler.help = ['daily', 'claim']
+handler.help = ['diario', 'reclamar']
 handler.tags = ['xp']
-handler.command = /^(daily|claim)$/i
+handler.command = /^(diario|reclamar)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
