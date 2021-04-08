@@ -7,9 +7,9 @@ let handler = async (m, { conn, text }) => {
 ${users.map(v => 'wa.me/' + v.replace(/[^0-9]/g,'') + '?text=.menu').join('\n')}`.trim(), m)
   } else conn.reply(m.chat, 'Esta función es solo para hosts de bots',  m)
 }
-handler.help = ['broadcastjadibot','bcbot'].map(v => v + ' <teks>')
+handler.help = ['Difusion entre bots','dfbot'].map(v => v + ' <texto>')
 handler.tags = ['host']
-handler.command = /^(broadcast|bc)(jadi)?bot$/i
+handler.command = /^(Difusion|df)(bot)?bots$/i
 handler.owner = true
 handler.mods = false
 handler.premium = false
