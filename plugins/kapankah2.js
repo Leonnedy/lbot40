@@ -1,12 +1,12 @@
 let handler = async (m, { conn, command, text }) => {
   conn.reply(m.chat, `
 *Pertanyaan:* ${command} ${text}
-*Jawaban:* ${Math.floor(Math.random() * 10)} ${pickRandom(['segundo', 'minuto', 'hora', 'día', 'semana', 'mes', 'año', 'década', 'siglo'])} lagi ...
+*Jawaban:* ${Math.floor(Math.random() * 10)} ${pickRandom(['en un segundo', 'en un minuto', 'en una hora', 'en un día', 'en una semana', 'en un mes', 'en un año', 'en una década', 'en un siglo'])} lagi ...
 `.trim(), m)
 }
-handler.help = ['', 'kah'].map(v => 'kapan' + v + ' <pertanyaan>')
+handler.help = ['', 'cuando2'].map(v => 'cuando' + v + ' <pregunta>')
 handler.tags = ['kerang']
-handler.command = /^kapan(kah)?$/i
+handler.command = /^cuando2(kah)?$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
