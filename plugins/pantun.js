@@ -3,7 +3,7 @@ let handler  = async (m, { conn }) => {
 }
 handler.help = ['pantun']
 handler.tags = ['quotes']
-handler.command = /^(pantun)$/i
+handler.command = /^(frase)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
@@ -22,6 +22,15 @@ function pickRandom(list) {
 }
 
 global.pantun = [
+" *FRASE:*\n\nHoy no hay frase\npero,\n *Leo y Nath Supremacy*",
+" *FRASE:*\n\nDura no es la vida\nDura es la que te comes",
+" *FRASE:*\n\*Pete no pete quetepe machete sorete soplete cumpete masteque suplete*",  
+" *FRASE:*\n\n*͓̽l͓̽a͓̽ ͓̽n͓̽a͓̽l͓̽g͓̽e͓̽a͓̽ ͓̽y͓̽ ͓̽l͓̽e͓̽ ͓̽d͓̽a͓̽ ͓̽u͓̽n͓̽a͓̽ ͓̽r͓̽e͓̽l͓̽a͓̽c͓̽i͓̽ó͓̽n͓̽ ͓̽c͓̽o͓̽m͓̽p͓̽l͓̽e͓̽t͓̽a͓̽m͓̽e͓̽n͓̽t͓̽e͓̽ ͓̽e͓̽s͓̽t͓̽a͓̽b͓̽l͓̽e͓̽*͓̽",
+" *FRASE:*\n\nCuando la vida te de limones\n𝓬𝓾𝓵𝓮𝓪𝓽𝓮 𝓾𝓷 𝓷𝓲ñ𝓸\ *nel hombre morado*",
+" *FRASE:*\n\nY pensar que antes cazabamos mamuts.\n *attm:el wey que no puede cargar ni un garrafón*",
+" *FRASE:*\n\n *En este mundo es follar o ser follado*",  
+" *FRASE:*\n\nmi mama me dió la vida\npero la persona que le salio esta frase\nme dio ganas de vivirla.",
+" *FRASE:*\n\nLa vida no fue echa para llorar\n la vida fue echa para culiarse perros callejeros\n *att: el pana*",
 " *FRASE:*\n\n私の肛門のかゆみ、助けてください a no ya lo arregle",
 " *FRASE:*\n\nNo existe dolor mas doloroso\nque el dolor que duele doliendo \nen el dolor doloroso que duele\n *att: el chico adolorid- dolor dolor me duele aaaaaaaaaa alaberga -se muere de tanto dolor doloroso que duele doliendo dolor a*", 
 " *FRASE:*\n\nse venden empanadaaas,\nricas y calientes empanadaaas,\ntenemo de jamon, queso, pollo, compren hoy mismo su deliciosa empanadaaa.",
@@ -43,7 +52,7 @@ global.pantun = [
 " *FRASE:*\n\nMorite,\nEres lo peor que me ha tocado aguantar,\nMalparido estorbo de la vida.\n *Bot modo nojado*",
 " *FRASE:*\n\nMi perro se largo en cuanto abri la puerta,\n *Michelle, la italiana victima de abandono perrumascotal*",
 " *FRASE:*\n\npara triunfar en la vida,\nnecesitas saber usar las 3 -S,\n1.Sexoooooo,\n2.Sexooooooooooo...\n3.Sexoooooooooooooo",
-" *FRASE:*\n\nLevantate y camina,\nDespues de todo,\nAun tienes dos buenas piernas.\n *Damian momazos*",
+" *FRASE:*\n\nLevantate y camina,\nDespues de todo,\nAun tienes dos buenas piernas.\n *El Damo*",
 " *FRASE:*\n\nHace un hermoso dia alla afuera,\nLos pajaros cantan las flores florecen,\nEn dias como estos,\nlos niños como tu...\n *DEBERIAN ARDER EN EL INFIERNO*",
 " *FRASE:*\n\nSi la vida te da la espalda,\nMetele un dedo en el ojete.\n *Aiden 2021*",
 " *FRASE:*\n\Yare Yare,\nDame un respiro,\nNo puedo escribir tan rapido,\nPor ese internet qlo que tienes.\n *Bot a Leo*",
