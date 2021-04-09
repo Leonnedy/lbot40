@@ -21,9 +21,9 @@ let handler = async (m, { text, usedPrefix }) => {
     }
 
 }
-handler.help = ['translate'].map(v => v + ' <to>|<teks>')
+handler.help = ['traducir'].map(v => v + ' <a>|<texto>')
 handler.tags = ['tools']
-handler.command = /^(tr(anslate)?)$/i
+handler.command = /^(tr(aducir)?)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
