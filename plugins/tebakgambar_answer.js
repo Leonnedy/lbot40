@@ -12,8 +12,8 @@ handler.before = async function (m) {
       m.reply(`*Benar!*\n+${conn.tebakgambar[id][2]} XP`)
       clearTimeout(conn.tebakgambar[id][3])
       delete conn.tebakgambar[id]
-    } else if (m.text.toLowerCase().endsWith(json.jawaban.split` `[1])) m.reply(`*Dikit Lagi!*`)
-    else m.reply(`*Salah!*`)
+    } else if (m.text.toLowerCase().endsWith(json.jawaban.split` `[1])) m.reply(`*Un poco más!*`)
+    else m.reply(`*¡Equivocado!*`)
   }
 }
 handler.exp = 0
