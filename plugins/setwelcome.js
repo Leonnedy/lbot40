@@ -6,9 +6,9 @@ let handler = async (m, { conn, text, isROwner, isOwner }) => {
     m.reply('Bienvenida está configurado correctamente\n@user (Mention)\n@subject (Judul Grup)')
   } else throw 'y el texto?'
 }
-handler.help = ['setwelcome <teks>']
+handler.help = ['conf. Bienvenida <texto>']
 handler.tags = ['owner', 'group']
 
-handler.command = /^setwelcome$/i
+handler.command = /^cfbd$/i
 module.exports = handler
 
