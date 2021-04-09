@@ -2,9 +2,9 @@ let handler = async (m, { conn, text }) => {
   let users = text.split`,`.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v.length > 20)
   conn.groupAdd(m.chat, users)
 }
-handler.help = ['add', '+'].map(v => 'o' + v + ' @user')
+handler.help = ['añadir', '+'].map(v => 'o' + v + ' @user')
 handler.tags = ['owner']
-handler.command = /^(oadd|o\+)$/i
+handler.command = /^(oañadir|o\+)$/i
 handler.owner = true
 handler.mods = false
 handler.premium = false
