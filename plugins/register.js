@@ -22,10 +22,10 @@ let handler = async function (m, { text, usedPrefix }) {
 ╰────
 `.trim())
 }
-handler.help = ['daftar', 'reg', 'register'].map(v => v + ' <nama>.<umur>')
+handler.help = ['registrar', 'reg', 'registro'].map(v => v + ' <nombre>.<umur>')
 handler.tags = ['exp']
 
-handler.command = /^(daftar|reg(ister)?)$/i
+handler.command = /^(registrar|reg(ister)?)$/i
 
 module.exports = handler
 
