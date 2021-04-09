@@ -7,7 +7,7 @@ let handler = async (m, { conn, text }) => {
   else who = m.chat
   if (!who) throw 'Etiqueta uno'
   let txt = text.replace('@' + who.split`@`[0], '').trim()
-  if (isNaN(txt)) throw 'Hanya angka'
+  if (isNaN(txt)) throw 'Solo números'
   let xp = parseInt(txt)
   let exp = xp
   let pjk = Math.ceil(xp * pajak)
@@ -21,9 +21,9 @@ let handler = async (m, { conn, text }) => {
   m.reply(`(${-xp} XP) + (${-pjk} XP (Pajak 2%)) = ( ${-exp} XP)`)
   conn.fakeReply(m.chat, `+${xp} XP`, who, m.text)
 }
-handler.help = ['pay @user <amount>']
+handler.help = ['pagar @user <cantidad>']
 handler.tags = ['xp']
-handler.command = /^pay$/
+handler.command = /^pagar$/
 handler.rowner = true
 
 module.exports = handler
