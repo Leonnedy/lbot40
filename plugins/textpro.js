@@ -10,9 +10,9 @@ let handler = async (m, { conn, args: [effect], text: txt }) => {
   let url = global.API('xteam', '/textpro/' + effect, { text, text2 }, 'APIKEY')
   await conn.sendFile(m.chat, url, 'textpro.jpg', `*TEXTPRO*\n*Effect:* ${effect}`, m)
 }
-handler.help = ['textpro'].map(v => v + ' <effect> <text>|[text2]')
+handler.help = ['textopro'].map(v => v + ' <efecto> <texto>|[texto2]')
 handler.tags = ['tools']
-handler.command = /^(textpro)$/i
+handler.command = /^(textopro)$/i
 
 module.exports = handler
 
