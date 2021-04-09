@@ -3,12 +3,12 @@ let handler = async (m, { conn, text, isROwner, isOwner }) => {
     if (isROwner) global.conn.bye = text
     else if (isOwner) conn.bye = text
     else global.DATABASE._data.chats.sBye = text
-    m.reply('Bye está configurado correctamente\n@user (Mention)')
+    m.reply('Despedida está configurado correctamente\n@user (Mencion)')
   } else throw '¿Dónde está el texto?'
 }
-handler.help = ['setbye <teks>']
+handler.help = ['Despedida <texto>']
 handler.tags = ['owner', 'group']
 
-handler.command = /^setbye$/i
+handler.command = /^despedida$/i
 module.exports = handler
 
