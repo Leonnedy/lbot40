@@ -14,8 +14,8 @@ let handler  = async (m, { conn, usedPrefix }) => {
     let json = await res.json()
     if (!json.status) throw json
     let caption = `
-Timeout *${(timeout / 1000).toFixed(2)} detik*
-Ketik ${usedPrefix}hint untuk hint
+Se acabó el tiempo *${(timeout / 1000).toFixed(2)} detik*
+Tipo ${usedPrefix}hint untuk hint
 Bonus: ${poin} XP
     `.trim()
     conn.tebakgambar[id] = [
@@ -27,8 +27,8 @@ Bonus: ${poin} XP
       }, timeout)
     ]
   }
-  handler.help = ['tebakgambar']
+  handler.help = ['adivina la imagen']
   handler.tags = ['game']
-  handler.command = /^tebakgambar/i
+  handler.command = /^Adivinaimagen/i
   
   module.exports = handler
