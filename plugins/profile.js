@@ -25,8 +25,8 @@ Registrado: ${registered ? 'Yes (' + new Date(regTime) + ')': 'No'}${lastclaim >
     conn.sendFile(m.chat, pp, 'pp.jpg', str, m, false, { contextInfo: { mentionedJid }})
   }
 }
-handler.help = ['profile [@user]']
+handler.help = ['perfil [@user]']
 handler.tags = ['tools']
-handler.command = /^profile$/i
+handler.command = /^perfil$/i
 module.exports = handler
 
