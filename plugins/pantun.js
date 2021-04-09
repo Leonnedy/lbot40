@@ -22,6 +22,8 @@ function pickRandom(list) {
 }
 
 global.pantun = [
+" *FRASE:*\n\nsi algun dia te sientes pendejo,\nacuerdate de que ya lo eres desde que naciste jkajajsakj*",
+" *FRASE:*\n\nEl gol de Maradona fue con la mano\n *att los mexicanos*",
 " *FRASE:*\n\nHoy no hay frase\npero,\n *Leo y Nath Supremacy*",
 " *FRASE:*\n\nDura no es la vida\nDura es la que te comes",
 " *FRASE:*\n\*Pete no pete quetepe machete sorete soplete cumpete masteque suplete*",  
@@ -34,7 +36,7 @@ global.pantun = [
 " *FRASE:*\n\n私の肛門のかゆみ、助けてください a no ya lo arregle",
 " *FRASE:*\n\nNo existe dolor mas doloroso\nque el dolor que duele doliendo \nen el dolor doloroso que duele\n *att: el chico adolorid- dolor dolor me duele aaaaaaaaaa alaberga -se muere de tanto dolor doloroso que duele doliendo dolor a*", 
 " *FRASE:*\n\nse venden empanadaaas,\nricas y calientes empanadaaas,\ntenemo de jamon, queso, pollo, compren hoy mismo su deliciosa empanadaaa.",
-" *FRASE:*\n\npor favor, si alguien ve esto,\nsaquenme del sotano de Leo,\nsoy una persona real y me tiene secuestrado, usen el comando\n *.info para contactarse conmigo*",
+" *FRASE:*\n\npor favor, si alguien ve esto,\nsaquenme del sotano de Leo,\nsoy una persona real y me tiene secuestrado\n *tienes que decirme el numero de la tarjeta de credito de tus padres y los numeritos de atras para salvarme*",
 " *FRASE:*\n\nAlbion online,\nes un MMORPG,\nno lineal.",
 " *FRASE:*\n\nAYUDA GENTE SE ACTIVARON LAS MAYUSCULAS Y NO SE COMO SE QUITa a ya olvidenlo ya lo encontre.",
 " *FRASE:*\n\nTUR,\nDAN,\nFUR GUO.\n *PUPURUPURUPURUPU TROLEO HERMANO*",
