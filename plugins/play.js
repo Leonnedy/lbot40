@@ -25,9 +25,9 @@ let handler = async (m, { conn, command, text, isPrems, isOwner }) => {
 *Fuente:* ${vid.url}
 `.trim(), m, false, _thumb || {})
 }
-handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
+handler.help = ['rola', 'rola2'].map(v => v + ' <nombre de la rola>')
 handler.tags = ['downloader']
-handler.command = /^play2?$/i
+handler.command = /^rola2?$/i
 
 handler.exp = 0
 handler.limit = true
