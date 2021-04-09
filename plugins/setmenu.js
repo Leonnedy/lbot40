@@ -19,9 +19,9 @@ let handler  = async (m, { conn, command, text }) => {
     }
   }
 }
-handler.help = ['', 'before','header','body','footer','after'].map(v => 'setmenu' + v + ' <teks>')
+handler.help = ['', 'antes','cabecera','cuerpo','pie de página','despues'].map(v => 'Confmenu' + v + ' <texto>')
 handler.tags = ['owner']
-handler.command = /^set(menu|help|\?)(before|header|body|footer|after)?$/i
+handler.command = /^set(menu|help|\?)(antes|cabecera|cuerpo|piedepagina|despues)?$/i
 handler.owner = true
 handler.mods = false
 handler.premium = false
