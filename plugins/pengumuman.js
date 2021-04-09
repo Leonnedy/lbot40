@@ -4,9 +4,9 @@ let handler = async (m, { conn, text, participants }) => {
   let users = participants.map(u => u.jid)
   conn.reply(m.chat, text, m, { contextInfo: { mentionedJid: users } })
 }
-handler.help = ['pengumuman','announce','hidetag'].map(v => v + ' [teks]')
+handler.help = ['anuncio','anunciar','hidetag'].map(v => v + ' [teks]')
 handler.tags = ['group']
-handler.command = /^(pengumuman|announce|hiddentag|hidetag)$/i
+handler.command = /^(anuncio|anunciar|hiddentag|hidetag)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
