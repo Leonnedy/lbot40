@@ -15,7 +15,7 @@ let handler = async (m, { conn }) => {
       clearTimeout(conn.math[id][3])
       delete conn.math[id]
       throw `*Kesempatan habis!*\nJawaban: *${math.result}*`
-    } else throw `*¡Respuesta incorrecta!*\nMasih ada ${conn.math[id][2]} oportunidad`
+    } else throw `*¡Respuesta incorrecta!*\nAun disponible ${conn.math[id][2]} oportunidad`
   }
  }
 }
