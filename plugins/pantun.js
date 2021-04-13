@@ -22,9 +22,14 @@ function pickRandom(list) {
 }
 
 global.pantun = [
+ " *FRASE:*\n\nTu mama es repostera?\nPorque un bombón como tu no lo hace cualquiera \n *esta va pa mi bebe*",
+" *FRASE:*\n\nNo olvides que si te caes\nSiempre estare ahi para reirme",
+" *FRASE:*\n\nSi la vida te da limones\nMetetelos en el ojete",
+" *FRASE:*\n\nVivir por siempre es lo que todos quieren\nvolar todos desean \n *culearme un perro callejero es lo que anhelo*",
+" *FRASE:*\n\nඞ\n*AMONG US*",
 " *FRASE:*\n\nser pendejo no es un don ni una maldición o una bendición\nEs una forma de ser*",
 " *FRASE:*\n\nsi ser pendejo es delito,\nyo estaria en prision por decapitar 23 niños \n *el hombre miado*",
-" *FRASE:*\n\nsi algun dia te sientes pendejo,\nacuerdate de que ya lo eres desde que naciste jkajajsakj*",
+" *FRASE:*\n\nsi algun dia te sientes pendejo,\n*acuerdate de que ya lo eres desde que naciste jkajajsakj*",
 " *FRASE:*\n\nEl gol de Maradona fue con la mano\n *att los mexicanos*",
 " *FRASE:*\n\nHoy no hay frase\npero,\n *Leo y Nath Supremacy*",
 " *FRASE:*\n\nDura no es la vida\nDura es la que te comes",
