@@ -22,6 +22,7 @@ function pickRandom(list) {
 }
 
 global.pantun = [
+" *FRASE:*\n\nsi ser pendejo es delito,\nyo estaria en prision por decapitar 23 niños \n *el hombre miado*",
 " *FRASE:*\n\nsi algun dia te sientes pendejo,\nacuerdate de que ya lo eres desde que naciste jkajajsakj*",
 " *FRASE:*\n\nEl gol de Maradona fue con la mano\n *att los mexicanos*",
 " *FRASE:*\n\nHoy no hay frase\npero,\n *Leo y Nath Supremacy*",
