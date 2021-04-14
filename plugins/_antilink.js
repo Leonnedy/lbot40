@@ -5,7 +5,7 @@ handler.before = function (m, { user }) {
   if (m.isBaileys && m.fromMe) return true
   let chat = global.DATABASE.data.chats[m.chat]
   let isGroupLink = linkRegex.exec(m.text)
-
+  }
   if (chat.antiLink && isGroupLink) {
     m.reply('¡¡Borrar!!')
     if (global.opts['restrict']) {
