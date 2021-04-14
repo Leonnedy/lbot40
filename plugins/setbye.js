@@ -3,7 +3,7 @@ let handler = async (m, { conn, text, isROwner, isOwner }) => {
     if (isROwner) global.conn.bye = text
     else if (isOwner) conn.bye = text
     else global.DATABASE._data.chats.sBye = text
-    m.reply('Despedida está configurado correctamente\n@user (Mencion)')
+    m.reply('Despedida está configurado correctamente\n@user (Mention)')
   } else throw '¿Dónde está el texto?'
 }
 handler.help = ['Despedida <texto>']
