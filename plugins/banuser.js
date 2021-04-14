@@ -9,9 +9,9 @@ let handler = async (m, { conn, text}) => {
     users[who].banned = true
     conn.reply(m.chat, `no vio venir el chingadazo`, m)
 }
-handler.help = ['oban']
+handler.help = ['Kick']
 handler.tags = ['owner']
-handler.command = /^oban$/i
+handler.command = /^kick$/i
 handler.rowner = true
 
 module.exports = handler
