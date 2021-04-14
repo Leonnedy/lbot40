@@ -46,16 +46,16 @@ module.exports = {
         let chat
         if (chat = global.DATABASE._data.chats[m.chat]) {
           if (!'isBanned' in chat) chat.isBanned = false
-          if (!'welcome' in chat) chat.welcome = false
-          if (!'sWelcome' in chat) chat.sWelcome = ''
-          if (!'sBye' in chat) chat.sBye = ''
+          if (!'welcome' in chat) chat.welcome = true
+          if (!'sWelcome' in chat) chat.sWelcome = 'holii, se bienvenido nuevo usuario'
+          if (!'sBye' in chat) chat.sBye = 'Chao conchetumare'
           if (!'delete' in chat) chat.delete = true
-          if (!'antiLink' in chat) chat.antiLink = false
+          if (!'antiLink' in chat) chat.antiLink = true
         } else global.DATABASE._data.chats[m.chat] = {
           isBanned: false,
-          welcome: false,
-          sWelcome: '',
-          sBye: '',
+          welcome: true,
+          sWelcome: 'holii, se bienvenido nuevo usuario',
+          sBye: 'Chao conchetumare',
           delete: true,
           antiLink: false,
         }
@@ -174,7 +174,7 @@ module.exports = {
           if (xp > 200) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
           if (!isPrems && plugin.limit && global.DATABASE._data.users[m.sender].limit < plugin.limit * 1) {
-            this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, m)
+            this.reply(m.chat, `Su límite ha terminado, compre a través de *${usedPrefix}buy*`, m)
             continue // Limit habis
           }
           try {
@@ -298,9 +298,9 @@ module.exports = {
     let chat = global.DATABASE._data.chats[m.key.remoteJid]
     if (chat.delete) return
     await this.reply(m.key.remoteJid, `
-Terdeteksi @${m.participant.split`@`[0]} telah menghapus pesan
+Detectado @${m.participant.split`@`[0]} ha borrado el mensaje
 
-Untuk mematikan fitur ini, ketik
+Para desactivar esta función, escriba
 *.enable delete*
 `.trim(), m.message, {
       contextInfo: {
@@ -313,15 +313,15 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
-    owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
-    mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-    premium: 'Perintah ini hanya untuk member _*Premium*_ !',
-    group: 'Perintah ini hanya dapat digunakan di grup!',
+    rowner: 'Este comando solo puede ser utilizado por _*Leo XDDD*_',
+    owner: 'Este comando solo puede ser utilizado por _*Leoreo Bot*_!',
+    mods: 'Este comando solo puede ser utilizado por _*Moderator*_ !',
+    premium: 'Este comando solo puede ser utilizado por _*Premium*_ !',
+    group: '¡Este comando solo se puede usar en grupos!',
     private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
     admin: 'Perintah ini hanya untuk *Admin* grup!',
-    botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-    unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*'
+    botAdmin: 'Hacer bots como *Admin* para usar este comando!',
+    unreg: 'Regístrese para utilizar esta función escribiendo:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*'
   }[type]
   if (msg) return m.reply(msg)
 }
