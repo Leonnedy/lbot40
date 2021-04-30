@@ -40,6 +40,11 @@ function start(file) {
         p.send(process.uptime())
         break
     }
+          if (messagesC.includes("vete")){
+			client.updatePresence(from, Presence.composing)
+			reply("como tu padre")
+	}
+	
   })
   p.on('exit', code => {
     console.error('Exited with code:', code)
