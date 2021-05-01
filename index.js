@@ -40,10 +40,7 @@ function start(file) {
         p.send(process.uptime())
         break
     }
-     case 'beat1':
-tujuh = fs.readFileSync('./assets/beat1.mp3');
-client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
+
 	
   })
   p.on('exit', code => {
