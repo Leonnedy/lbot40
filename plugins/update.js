@@ -6,9 +6,9 @@ let handler = async (m, { conn, text }) => {
     conn.reply(m.chat, stdout.toString(), m)
   }
 }
-handler.help = ['actualizar']
+handler.help = ['update']
 handler.tags = ['host']
-handler.command = /^actualizar$/i
+handler.command = /^update$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
@@ -22,4 +22,3 @@ handler.fail = null
 handler.exp = 0
 
 module.exports = handler
-
